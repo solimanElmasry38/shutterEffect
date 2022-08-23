@@ -1,0 +1,105 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    cursor:default;
+
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: #151515;
+}
+.box{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    flex-direction: column;
+
+}
+h2{
+    font-size: 110px;
+    color:#22ff08;
+    font-weight: 900;
+}
+input{
+    appearance: none;
+    width:500px;
+    height:25px;
+    outline: none;
+    background-color: rgb(0, 0, 0,.8);
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 0px 2px #151515,
+                   inset 0  0 5px #000;
+    overflow: hidden;
+}
+
+::-webkit-slider-thumb{
+    appearance: none;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #22ff08;
+    cursor: pointer;
+    border: 6px solid #222;
+    box-shadow: -415px 0px 0px 400px #22ff08;
+}
+#tl{
+    position:fixed;
+    top:0;
+    left:0;
+    height:50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    border-right: 1px solid #ffffff33;
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(15px);
+    pointer-events: none;
+    transition: .2s;
+
+
+
+}
+#tr{
+    position:fixed;
+    top:0;
+    right:0;
+    width:50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(25px);
+    pointer-events: none;
+    transition: .2s;
+
+
+
+}
+#bl{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    border-right: 1px solid #ffffff33;
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(25px);
+    pointer-events: none;
+    transition: .2s;
+
+
+}
+#br{
+    position:fixed;
+    bottom:0;
+    right:0;
+    height:50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    border-right: 1px solid #ffffff33;
+    border-bottom: 1px solid #ffffff33;
+    backdrop-filter: blur(25px);
+    pointer-events: none;
+    transition: .2s;
+}
